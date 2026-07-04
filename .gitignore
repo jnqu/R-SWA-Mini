@@ -19,3 +19,4 @@ benchmarks/results/*.png
 .DS_Store
 notes.md
 .vscode/
+conftest.py
