@@ -69,7 +69,6 @@ def main() -> None:
     except Exception as exc:  # noqa: BLE001
         print(f"  torch unavailable: {exc}")
 
-    print("\nDone. If everything above looks right, Milestone 0 is satisfied.")
 
 
 if __name__ == "__main__":
