@@ -1,0 +1,12 @@
+# R-SWA Mini dependencies.
+# Versions below are the ones verified working on the dev machine
+# (Apple M4 Pro, macOS 15.1, Python 3.13.9) as of Milestone 0.
+# Loose lower bounds are used so the project stays installable, but the
+# exact versions are recorded in comments for reproducibility.
+
+torch>=2.4          # verified: 2.12.1
+transformers>=4.44  # verified: 5.12.1  (NOTE: v5 cache API differs from many tutorials)
+numpy>=1.26         # verified: 2.3.5
+pytest>=8.0         # verified: 8.4.2
+matplotlib>=3.8     # verified: 3.10.6  (used from the benchmarking milestones onward)
+pandas>=2.0         # verified: 2.3.3   (used for benchmark result tables)
