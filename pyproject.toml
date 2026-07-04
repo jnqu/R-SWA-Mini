@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rswa-mini"
+version = "0.1.0"
+description = "Educational re-implementation of Reference Sliding Window Attention"
+requires-python = ">=3.9"
+
+# Our source uses a src/ layout: the importable package is src/rswa_mini.
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# Lets pytest import rswa_mini even without the editable install.
+[tool.pytest.ini_options]
+pythonpath = ["src"]
